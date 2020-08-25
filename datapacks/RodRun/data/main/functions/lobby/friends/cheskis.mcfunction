@@ -1,0 +1,5 @@
+# Kill previous
+kill @e[type=armor_stand,tag=lobby_friend_cheskis]
+
+# Summon new
+summon minecraft:armor_stand -47 42 -54 {Rotation:[270f],CustomName:'[{"text":"Cheskis ❤","color":"yellow"}]',Tags:["lobby_friend_cheskis","lobby_friend"],Pose:{RightArm: [-15.0f, 20.0f, 20.0f], Head: [0.0f, -10.0f, 0.0f], LeftArm: [180.0f, 10.0f,20.0f],RightLeg:[10.0f,5.0f,0.0f]},NoGravity:1b,NoBasePlate:1b,ShowArms:1b,DisabledSlots:4144959,ArmorItems:[{id:"minecraft:leather_boots",Count:1b,tag:{display:{color:3177032}}},{id:"minecraft:leather_leggings",Count:1b,tag:{display:{color:1663861}}},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:6883593}}},{id:"minecraft:player_head",Count:1b,tag:{display:{Name:"{\"text\":\"Theticman\"}"},SkullOwner:{Id:"d508928d-2559-44e6-aae5-328399cdd634",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTk0ZTYyNGYwYmRhNzFjYjczNGRiMWMyNjQxNGUzYWM3Nzc1ODJmMTBkOGFmOTA1MzA4N2ViNjM4ZDU4MzQwZSJ9fX0="}]}}}}]}

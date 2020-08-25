@@ -1,0 +1,5 @@
+# Kill previous
+kill @e[type=armor_stand,tag=lobby_friend_galshi]
+
+# Summon new
+summon minecraft:armor_stand 31.0 15.9 -47.1 {CustomName:'[{"text":"Galshi ❤","color":"yellow"}]',Tags:["lobby_friend_galshi","lobby_friend"],Pose:{Body:[3f,0f,0f],Head:[19f,0f,0f],LeftLeg:[13f,0f,360f],RightLeg:[0f,0f,9f],LeftArm:[284f,354f,0f],RightArm:[290f,13f,0f]},NoGravity:1b,NoBasePlate:1b,ShowArms:1b,DisabledSlots:4144959,ArmorItems:[{id:"minecraft:leather_boots",Count:1b,tag:{display:{color:16777215}}},{id:"minecraft:leather_leggings",Count:1b,tag:{display:{color:13618381}}},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:8748679}}},{id:"minecraft:player_head",Count:1b,tag:{display:{Name:"{\"text\":\"Theticman\"}"},SkullOwner:{Id:"ce56307f-3b8f-4264-9f2d-66c99401ff69",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjJmMzI3ZWQ3OGZiZjAyZTdiYWFjYTlkZTA2NmI5ZWFmZjBhYTU4OTcyYmQ5ZDI0NjNmNzlhMzlhZDVmNzgzNCJ9fX0="}]}}}}]}

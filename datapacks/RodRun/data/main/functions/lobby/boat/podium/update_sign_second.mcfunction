@@ -1,0 +1,26 @@
+# Minutes
+scoreboard players operation !Second Lobby_boat_m = !Second Lobby_boat_best
+scoreboard players operation !Second Lobby_boat_m /= !1200 Lobby_boat_m
+
+# Seconds
+scoreboard players operation !Second Lobby_boat_s = !Second Lobby_boat_best
+scoreboard players operation !Second Lobby_boat_s /= !20 Lobby_boat_s
+scoreboard players operation !Second Lobby_boat_s %= !60 Lobby_boat_s
+
+# Centi seconds
+scoreboard players operation !Second Lobby_boat_cs = !Second Lobby_boat_best
+scoreboard players operation !Second Lobby_boat_cs %= !20 Lobby_boat_cs
+scoreboard players operation !Second Lobby_boat_cs *= !5 Lobby_boat_cs
+
+# Update sign
+execute if score !Second Lobby_boat_cs matches 0..9 if score !Second Lobby_boat_s matches 0..9 if score !Second Lobby_boat_m matches 0 run data merge block -13 16 -42 {Text2:'[{"text":""},{"text":"Second","color":"yellow","bold":"true"},{"text":": ","color":"yellow"},{"text":"0","color":"gold"},{"score":{"name":"!Second","objective":"Lobby_boat_s"},"color":"gold"},{"text":".","color":"yellow"},{"text":"0","color":"gold"},{"score":{"name":"!Second","objective":"Lobby_boat_cs"},"color":"gold"},{"text":"s","color":"yellow"}]'}
+execute if score !Second Lobby_boat_cs matches 10.. if score !Second Lobby_boat_s matches 0..9 if score !Second Lobby_boat_m matches 0 run data merge block -13 16 -42 {Text2:'[{"text":""},{"text":"Second","color":"yellow","bold":"true"},{"text":": ","color":"yellow"},{"text":"0","color":"gold"},{"score":{"name":"!Second","objective":"Lobby_boat_s"},"color":"gold"},{"text":".","color":"yellow"},{"score":{"name":"!Second","objective":"Lobby_boat_cs"},"color":"gold"},{"text":"s","color":"yellow"}]'}
+execute if score !Second Lobby_boat_cs matches 0..9 if score !Second Lobby_boat_s matches 10.. if score !Second Lobby_boat_m matches 0 run data merge block -13 16 -42 {Text2:'[{"text":""},{"text":"Second","color":"yellow","bold":"true"},{"text":": ","color":"yellow"},{"score":{"name":"!Second","objective":"Lobby_boat_s"},"color":"gold"},{"text":".","color":"yellow"},{"text":"0","color":"gold"},{"score":{"name":"!Second","objective":"Lobby_boat_cs"},"color":"gold"},{"text":"s","color":"yellow"}]'}
+execute if score !Second Lobby_boat_cs matches 10.. if score !Second Lobby_boat_s matches 10.. if score !Second Lobby_boat_m matches 0 run data merge block -13 16 -42 {Text2:'[{"text":""},{"text":"Second","color":"yellow","bold":"true"},{"text":": ","color":"yellow"},{"score":{"name":"!Second","objective":"Lobby_boat_s"},"color":"gold"},{"text":".","color":"yellow"},{"score":{"name":"!Second","objective":"Lobby_boat_cs"},"color":"gold"},{"text":"s","color":"yellow"}]'}
+execute if score !Second Lobby_boat_cs matches 0..9 if score !Second Lobby_boat_s matches 0..9 if score !Second Lobby_boat_m matches 1.. run data merge block -13 16 -42 {Text2:'[{"text":""},{"text":"Second","color":"yellow","bold":"true"},{"text":": ","color":"yellow"},{"score":{"name":"!Second","objective":"Lobby_boat_m"},"color":"gold"},{"text":"m ","color":"yellow"},{"text":"0","color":"gold"},{"score":{"name":"!Second","objective":"Lobby_boat_s"},"color":"gold"},{"text":".","color":"yellow"},{"text":"0","color":"gold"},{"score":{"name":"!Second","objective":"Lobby_boat_cs"},"color":"gold"},{"text":"s","color":"yellow"}]'}
+execute if score !Second Lobby_boat_cs matches 10.. if score !Second Lobby_boat_s matches 0..9 if score !Second Lobby_boat_m matches 1.. run data merge block -13 16 -42 {Text2:'[{"text":""},{"text":"Second","color":"yellow","bold":"true"},{"text":": ","color":"yellow"},{"score":{"name":"!Second","objective":"Lobby_boat_m"},"color":"gold"},{"text":"m ","color":"yellow"},{"text":"0","color":"gold"},{"score":{"name":"!Second","objective":"Lobby_boat_s"},"color":"gold"},{"text":".","color":"yellow"},{"score":{"name":"!Second","objective":"Lobby_boat_cs"},"color":"gold"},{"text":"s","color":"yellow"}]'}
+execute if score !Second Lobby_boat_cs matches 0..9 if score !Second Lobby_boat_s matches 10.. if score !Second Lobby_boat_m matches 1.. run data merge block -13 16 -42 {Text2:'[{"text":""},{"text":"Second","color":"yellow","bold":"true"},{"text":": ","color":"yellow"},{"score":{"name":"!Second","objective":"Lobby_boat_m"},"color":"gold"},{"text":"m ","color":"yellow"},{"score":{"name":"!Second","objective":"Lobby_boat_s"},"color":"gold"},{"text":".","color":"yellow"},{"text":"0","color":"gold"},{"score":{"name":"!Second","objective":"Lobby_boat_cs"},"color":"gold"},{"text":"s","color":"yellow"}]'}
+execute if score !Second Lobby_boat_cs matches 10.. if score !Second Lobby_boat_s matches 10.. if score !Second Lobby_boat_m matches 1.. run data merge block -13 16 -42 {Text2:'[{"text":""},{"text":"Second","color":"yellow","bold":"true"},{"text":": ","color":"yellow"},{"score":{"name":"!Second","objective":"Lobby_boat_m"},"color":"gold"},{"text":"m ","color":"yellow"},{"score":{"name":"!Second","objective":"Lobby_boat_s"},"color":"gold"},{"text":".","color":"yellow"},{"score":{"name":"!Second","objective":"Lobby_boat_cs"},"color":"gold"},{"text":"s","color":"yellow"}]'}
+
+# Update Third
+execute unless score !Third Lobby_boat_best matches 999999999 run function main:lobby/boat/podium/update_sign_third

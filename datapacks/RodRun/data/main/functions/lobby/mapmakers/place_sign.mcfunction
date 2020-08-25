@@ -1,0 +1,5 @@
+setblock 29 22 -42 air destroy
+setblock 29 22 -42 minecraft:oak_wall_sign[facing=west]{Text1:'{"text":"-==oOo==-","clickEvent":{"action":"run_command","value":"function main:lobby/mapmakers/tellraw"},"color":"dark_gray"}',Text2:'{"text":"MapMakers","color":"yellow"}',Text3:'["",{"text":"(","color":"gray"},{"text":"Click","color":"white"},{"text":")","color":"gray"}]',Text4:'{"text":"-==oOo==-","color":"dark_gray"}'}
+
+setblock 37 22 -42 air destroy
+setblock 37 22 -42 minecraft:oak_wall_sign[facing=east]{Text1:'{"text":"-==oOo==-","clickEvent":{"action":"run_command","value":"function main:lobby/mapmakers/tellraw"},"color":"dark_gray"}',Text2:'{"text":"MapMakers","color":"yellow"}',Text3:'["",{"text":"(","color":"gray"},{"text":"Click","color":"white"},{"text":")","color":"gray"}]',Text4:'{"text":"-==oOo==-","color":"dark_gray"}'}

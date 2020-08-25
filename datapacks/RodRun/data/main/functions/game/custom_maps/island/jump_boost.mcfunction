@@ -1,0 +1,5 @@
+# Clear jump_boost
+effect clear @a minecraft:jump_boost
+
+# jump_boost if on carpet
+execute as @a[gamemode=adventure] at @s if block ~ ~ ~ minecraft:lime_carpet run effect give @s minecraft:jump_boost 1 12 true

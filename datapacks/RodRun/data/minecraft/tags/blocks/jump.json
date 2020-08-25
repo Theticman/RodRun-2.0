@@ -1,0 +1,19 @@
+{
+   "values":[
+      "minecraft:chiseled_stone_bricks",
+      "minecraft:stone_bricks",
+      "minecraft:stone_brick_stairs",
+      "minecraft:dark_oak_slab",
+      "minecraft:air",
+      "minecraft:slime_block",
+      "minecraft:tall_grass",
+      "minecraft:grass",
+      "minecraft:ladder",
+      "minecraft:gold_block",
+      "minecraft:stone_brick_slab",
+      "minecraft:lantern",
+      "minecraft:light_weighted_pressure_plate",
+      "minecraft:spruce_trapdoor",
+      "minecraft:stone_button"
+   ]
+}

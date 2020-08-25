@@ -1,0 +1,2 @@
+setblock 40 17 -57 air destroy
+setblock 40 17 -57 minecraft:oak_wall_sign[facing=south]{Text1:'{"text":"-==oOo==-","clickEvent":{"action":"run_command","value":"function main:lobby/tester_room/tellraw"},"color":"dark_gray"}',Text2:'{"text":"Testers","color":"yellow"}',Text3:'["",{"text":"(","color":"gray"},{"text":"Click","color":"white"},{"text":")","color":"gray"}]',Text4:'{"text":"-==oOo==-","color":"dark_gray"}'}

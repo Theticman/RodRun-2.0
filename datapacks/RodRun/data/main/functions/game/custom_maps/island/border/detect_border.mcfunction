@@ -1,0 +1,4 @@
+execute if block ~ 2 ~1 red_wool align xz positioned ~0.5 ~ ~1 unless entity @e[tag=entity_border,type=cow,distance=..0.5,limit=1] run function main:game/custom_maps/island/border/summon_entity_border
+execute if block ~ 2 ~-1 red_wool align xz positioned ~0.5 ~ ~ unless entity @e[tag=entity_border,type=cow,distance=..0.5,limit=1] run function main:game/custom_maps/island/border/summon_entity_border
+execute if block ~1 2 ~ red_wool align xz positioned ~1 ~ ~0.5 unless entity @e[tag=entity_border,type=cow,distance=..0.5,limit=1] run function main:game/custom_maps/island/border/summon_entity_border
+execute if block ~-1 2 ~ red_wool align xz positioned ~ ~ ~0.5 unless entity @e[tag=entity_border,type=cow,distance=..0.5,limit=1] run function main:game/custom_maps/island/border/summon_entity_border

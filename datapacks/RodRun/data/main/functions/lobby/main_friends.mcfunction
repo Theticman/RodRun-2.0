@@ -1,0 +1,1 @@
+execute as @e[type=minecraft:armor_stand,tag=lobby_friend] at @s run function main:lobby/friends/display

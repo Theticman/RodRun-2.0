@@ -1,0 +1,1 @@
+execute unless block ~ ~-1 ~ #minecraft:jump run function main:lobby/jump/fail
